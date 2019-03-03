@@ -1,14 +1,14 @@
 ---
 id: lists-and-keys
-title: Lists and Keys
+title: பட்டியல்கள் மற்றும் சாவிகள் 
 permalink: docs/lists-and-keys.html
 prev: conditional-rendering.html
 next: forms.html
 ---
 
-First, let's review how you transform lists in JavaScript.
+முதலில், நீங்கள் எவ்வாறு பட்டியலை JavaScript இல் மாற்றுகிறீர்கள் என்பதை ஆய்வு செய்வோம்.
 
-Given the code below, we use the [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) function to take an array of `numbers` and double their values. We assign the new array returned by `map()` to the variable `doubled` and log it:
+கீழே தரப்பட்ட குறியீட்டின்(code) படி, நாங்கள் வரிசையாக்கப்பட்ட எண்களின் தொகுதியை அதே ஒழுங்கில் அவற்றின் பெறுமானங்கள் `இரட்டிப்பாக்கப்பட்ட` தொகுதியாக பெற [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) செயலியை பயன்படுத்துகின்றோம். நாங்கள் புதிய வரிசையாக்கப்பட்ட எண் தொகுதியை, அவ் வரிசையிலுள்ள எண்கள் `map()` செயலியால் ஒவ்வொன்றாக `இரட்டிப்பாக்கப்பட்டு` சேமிக்கப்படுவதனால் உருவாக்குகின்றோம்:
 
 ```javascript{2}
 const numbers = [1, 2, 3, 4, 5];
@@ -16,9 +16,9 @@ const doubled = numbers.map((number) => number * 2);
 console.log(doubled);
 ```
 
-This code logs `[2, 4, 6, 8, 10]` to the console.
+மேலே உள்ள குறியீட்டின்(code)  மூலம் பெறப்பட்ட பெறுபேறு `[2, 4, 6, 8, 10]`.
 
-In React, transforming arrays into lists of [elements](/docs/rendering-elements.html) is nearly identical.
+React இல், ஒழுங்குபடுத்தப்பட்ட வரிசைகளை [உறுப்புகளின்](/docs/rendering-elements.html) பட்டியல்களாக மாற்றியமைப்பது கிட்டத்தட்ட ஒரே மாதிரியாகும்.
 
 ### Rendering Multiple Components {#rendering-multiple-components}
 
